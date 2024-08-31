@@ -68,8 +68,8 @@ body, html {
 }
 
 .icons a img {
-    width: 50px; /* İkon boyutunu artırdık */
-    height: 50px;
+    width: 60px; /* İkon boyutunu daha da artırdık */
+    height: 60px;
     transition: transform 0.2s;
 }
 
@@ -79,13 +79,11 @@ body, html {
 
 @media (max-width: 600px) {
     .icons a img {
-        width: 40px; /* Mobil cihazlar için ikonları biraz daha büyük tuttuk */
-        height: 40px;
+        width: 50px; /* Mobil cihazlar için ikonları daha büyük tuttuk */
+        height: 50px;
     }
 
     .icons {
-        gap: 10px; /* Mobilde ikonlar arasındaki boşluğu biraz artırdık */
+        gap: 15px; /* Mobilde ikonlar arasındaki boşluğu artırdık */
     }
 }
-
-
