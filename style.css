@@ -1,4 +1,3 @@
-/* style.css */
 body, html {
     margin: 0;
     padding: 0;
@@ -62,14 +61,10 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 20px;
-}
-
-.icons a {
-    background-color: rgba(0, 0, 0, 0); /* Arka plan olmadan */
-    border-radius: 0%; 
-    padding: 10px; 
-    display: inline-block; 
+    flex-wrap: wrap; /* İkonların bir satıra sığmadığı durumlarda, bir sonraki satıra geçmesini sağlar */
+    justify-content: center; /* İkonları yatay olarak ortalar */
+    gap: 10px;
+    padding: 10px;
 }
 
 .icons a img {
@@ -81,3 +76,15 @@ body, html {
 .icons a img:hover {
     transform: scale(1.2); /* Üzerine gelindiğinde büyütme efekti */
 }
+
+@media (max-width: 600px) {
+    .icons a img {
+        width: 30px; /* Mobil cihazlar için ikonları küçültün */
+        height: 30px;
+    }
+
+    .icons {
+        gap: 5px; /* İkonlar arasındaki boşluğu daraltın */
+    }
+}
+
