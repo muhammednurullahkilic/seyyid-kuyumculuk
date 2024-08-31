@@ -63,13 +63,13 @@ body, html {
     display: flex;
     flex-wrap: wrap; /* İkonların bir satıra sığmadığı durumlarda, bir sonraki satıra geçmesini sağlar */
     justify-content: center; /* İkonları yatay olarak ortalar */
-    gap: 10px;
+    gap: 20px; /* Aradaki boşluğu biraz artırdık */
     padding: 10px;
 }
 
 .icons a img {
-    width: 40px;
-    height: 40px;
+    width: 50px; /* İkon boyutunu artırdık */
+    height: 50px;
     transition: transform 0.2s;
 }
 
@@ -79,12 +79,13 @@ body, html {
 
 @media (max-width: 600px) {
     .icons a img {
-        width: 30px; /* Mobil cihazlar için ikonları küçültün */
-        height: 30px;
+        width: 40px; /* Mobil cihazlar için ikonları biraz daha büyük tuttuk */
+        height: 40px;
     }
 
     .icons {
-        gap: 5px; /* İkonlar arasındaki boşluğu daraltın */
+        gap: 10px; /* Mobilde ikonlar arasındaki boşluğu biraz artırdık */
     }
 }
+
 
