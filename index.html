@@ -5,37 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEYYID KUYUMCULUK</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
     <!-- Arka plan görseli veya videosu -->
-    <div class="background">
-    <video autoplay muted loop playsinline id="background-video">
-    <source src="assets/video2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-        
- <style>
-    .video-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: -1;
-    }
-
-    #background-video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform: translate(-50%, -50%);
-    }
-</style>
-
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="assets/video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <!-- Üstteki "Merkez" ve "Şube" butonları -->
@@ -56,22 +55,23 @@
         <a href="https://api.whatsapp.com/send/?phone=%2B905465470444&text&type=phone_number&app_absent=0" target="_blank"><img src="assets/WP.png" alt="WP"></a>
         <a href="https://www.instagram.com/seyyidkuyumculuk/" target="_blank"><img src="assets/Instagram.png" alt="Instagram"></a>
         <a href="mailto:someone@example.com"><img src="assets/Mail.png" alt="Mail"></a>
-        <a href="https://www.tiktok.com/@seyyidkuyumculuk"><img src="assets/Tiktok.png" alt="Tıktok"></a>
+        <a href="https://www.tiktok.com/@seyyidkuyumculuk"><img src="assets/Tiktok.png" alt="Tiktok"></a>
         <a href="https://www.google.com/search?hl=tr-TR&gl=tr&q=Seyyid+Kuyumculuk,+De%C4%9Firmi%C3%A7em+Mahallesi+Gazimuhtarpa%C5%9Fa+Bulvar%C4%B1+N0:23/D,+27090+%C5%9Eehitkamil&ludocid=5689238239850526921&lsig=AB86z5W8wHgSSgeW1Jymkm8ys60O#lrd=0x1531e14b2fe10b63:0x4ef43c0948dbf8c9,3"><img src="assets/Google.png" alt="Google"></a>
         <a href="https://www.facebook.com/seyyidkuyumculuk"><img src="assets/Facebook.png" alt="Facebook"></a>
         <a href="http://www.seyyid.com.tr/"><img src="assets/Web.png" alt="Web"></a>
         <!-- Diğer ikonlar burada devam eder -->
     </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var video = document.getElementById('background-video');
-        video.play().catch(function(error) {
-            console.log('Otomatik oynatma başarısız:', error);
+    <!-- JavaScript kodu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('background-video');
+            video.play().catch(function(error) {
+                console.log('Otomatik oynatma başarısız:', error);
+            });
         });
-    });
-</script>
+    </script>
 
-    
 </body>
 </html>
+
