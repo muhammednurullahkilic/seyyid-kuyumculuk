@@ -1,0 +1,2 @@
+# seyyid-kuyumculuk
+ 
